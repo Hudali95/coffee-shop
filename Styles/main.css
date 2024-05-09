@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+:root {
+  --main-color: #443;
+  --primary-color: #443;
+  --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+  --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+  --border: 0.15rem solid var(--main-color);
+  --border-hover: 0.15rem dashed var(--main-color);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px !important;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../Images/new-bg.jpg);
+  background-size: cover;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.header,
+.footer {
+  height: 4em;
+  display: flex;
+  align-items: center;
+}
+/* Header */
+
+header {
+  display: flex;
+  background-color: #fff;
+}
+header .left-nav,
+header .right-nav {
+  flex: 1;
+  width: 3rem;
+  padding: 0 20px;
+}
+header .left-nav {
+  text-align: left;
+}
+header .right-nav {
+  text-align: right;
+}
+
+header .central-nav {
+  flex: 2;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+header .navbar {
+  display: flex;
+  height: 100%;
+}
+
+header .nav-link {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  box-sizing: content-box;
+  height: 100%;
+}
+/* header .nav-link:hover {
+  outline: 0px 0px 1px 0px solid blue;
+} */
+
+.primary-button {
+  padding: 0.2rem 0.7rem;
+  font-size: 1.1rem;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+.border-primary {
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+.border-primary:hover {
+  border: var(--border-hover);
+  border-radius: var(--border-radius-hover);
+}
+.left-nav {
+  font-size: 1.3rem;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
